@@ -12,6 +12,22 @@ var _Card = require('@material-ui/core/Card');
 
 var _Card2 = _interopRequireDefault(_Card);
 
+var _CardActions = require('@material-ui/core/CardActions');
+
+var _CardActions2 = _interopRequireDefault(_CardActions);
+
+var _CardContent = require('@material-ui/core/CardContent');
+
+var _CardContent2 = _interopRequireDefault(_CardContent);
+
+var _ListItem = require('@material-ui/core/ListItem');
+
+var _ListItem2 = _interopRequireDefault(_ListItem);
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
 var _connectField = require('uniforms/connectField');
 
 var _connectField2 = _interopRequireDefault(_connectField);
@@ -19,12 +35,6 @@ var _connectField2 = _interopRequireDefault(_connectField);
 var _joinName = require('uniforms/joinName');
 
 var _joinName2 = _interopRequireDefault(_joinName);
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _List = require('@material-ui/core/List');
 
 var _AutoField = require('./AutoField');
 
@@ -42,13 +52,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var ListItem_ = function ListItem_(props) {
     return _react2.default.createElement(
-        _List.ListItem,
+        _ListItem2.default,
         null,
         (0, _wrapField2.default)((0, _extends3.default)({ gridProps: { xs: 12 } }, props), _react2.default.createElement(
             _Card2.default,
             null,
             _react2.default.createElement(
-                _Card.CardContent,
+                _CardContent2.default,
                 null,
                 props.children ? _react.Children.map(props.children, function (child) {
                     return _react2.default.cloneElement(child, {
@@ -58,7 +68,7 @@ var ListItem_ = function ListItem_(props) {
                 }) : _react2.default.createElement(_AutoField2.default, props)
             ),
             _react2.default.createElement(
-                _Card.CardActions,
+                _CardActions2.default,
                 null,
                 _react2.default.createElement(_ListDelField2.default, { name: props.name, icon: props.delIcon })
             )

@@ -32,7 +32,17 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Card = require('@material-ui/core/Card');
+var _CardActions = require('@material-ui/core/CardActions');
+
+var _CardActions2 = _interopRequireDefault(_CardActions);
+
+var _ListItem = require('@material-ui/core/ListItem');
+
+var _ListItem2 = _interopRequireDefault(_ListItem);
+
+var _ListSubheader = require('@material-ui/core/ListSubheader');
+
+var _ListSubheader2 = _interopRequireDefault(_ListSubheader);
 
 var _ListAddField = require('./ListAddField');
 
@@ -56,7 +66,7 @@ var List_ = function List_(_ref) {
         _List2.default,
         (0, _extends3.default)({
             subheader: label ? _react2.default.createElement(
-                _List.ListSubheader,
+                _ListSubheader2.default,
                 { disableSticky: true },
                 label
             ) : undefined
@@ -73,10 +83,10 @@ var List_ = function List_(_ref) {
             return _react2.default.createElement(_ListItemField2.default, (0, _extends3.default)({ key: index, label: null, name: (0, _joinName2.default)(name, index) }, itemProps));
         }),
         _react2.default.createElement(
-            _List.ListItem,
+            _ListItem2.default,
             null,
             _react2.default.createElement(
-                _Card.CardActions,
+                _CardActions2.default,
                 null,
                 _react2.default.createElement(_ListAddField2.default, { name: name + '.$', initialCount: initialCount })
             )
