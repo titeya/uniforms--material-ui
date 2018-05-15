@@ -3,10 +3,10 @@ import filterDOMProps  from 'uniforms/filterDOMProps';
 import joinName        from 'uniforms/joinName';
 import List            from '@material-ui/core/List';
 import React           from 'react';
-import {CardActions}   from '@material-ui/core/Card';
+import CardActions     from '@material-ui/core/CardActions';
+import ListItem        from '@material-ui/core/ListItem';
+import ListSubheader   from '@material-ui/core/ListSubheader';
 import {Children}      from 'react';
-import {ListItem}      from '@material-ui/core/List';
-import {ListSubheader} from '@material-ui/core/List';
 
 import ListAddField  from './ListAddField';
 import ListItemField from './ListItemField';
