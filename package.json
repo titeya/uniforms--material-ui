@@ -1,0 +1,53 @@
+{
+  "_from": "uniforms--material-ui",
+  "_id": "uniforms--material-ui@1.22.6",
+  "_inBundle": false,
+  "_location": "/uniforms--material-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "uniforms--material-ui",
+    "name": "uniforms-@-aterial-ui",
+    "escapedName": "uniforms--material-ui",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": ["#USER", "/"],
+  "_spec": "uniforms--material-ui",
+  "bundleDependencies": false,
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "prop-types": "^15.5.7"
+  },
+  "deprecated": false,
+  "description": "Material UI v1.0 components for uniforms.",
+  "files": ["*.js", "src/"],
+  "jsnext:main": "src/index.js",
+  "keywords": [
+    "form",
+    "forms",
+    "meteor",
+    "react",
+    "react-component",
+    "schema",
+    "validation",
+    "material-ui-next",
+    "material--ui"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "src/index.js",
+  "name": "uniforms--material-ui",
+  "peerDependencies": {
+    "@material-ui/core": "^1.0.0-rc.0",
+    "react": "^15.3.0 || ^16.0.0",
+    "uniforms": "^1.24.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/titeya/uniforms--material-ui"
+  },
+  "version": "1.22.6"
+}
