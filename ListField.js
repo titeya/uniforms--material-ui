@@ -1,7 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _extends2 = require('babel-runtime/helpers/extends');
@@ -55,43 +55,47 @@ var _ListItemField2 = _interopRequireDefault(_ListItemField);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var List_ = function List_(_ref) {
-    var children = _ref.children,
-        initialCount = _ref.initialCount,
-        itemProps = _ref.itemProps,
-        label = _ref.label,
-        name = _ref.name,
-        value = _ref.value,
-        props = (0, _objectWithoutProperties3.default)(_ref, ['children', 'initialCount', 'itemProps', 'label', 'name', 'value']);
-    return _react2.default.createElement(
-        _List2.default,
-        (0, _extends3.default)({
-            subheader: label ? _react2.default.createElement(
-                _ListSubheader2.default,
-                { disableSticky: true },
-                label
-            ) : undefined
-        }, (0, _filterDOMProps2.default)(props)),
-        children ? value.map(function (item, index) {
-            return _react.Children.map(children, function (child) {
-                return _react2.default.cloneElement(child, {
-                    key: index,
-                    label: null,
-                    name: (0, _joinName2.default)(name, child.props.name && child.props.name.replace('$', index))
-                });
-            });
-        }) : value.map(function (item, index) {
-            return _react2.default.createElement(_ListItemField2.default, (0, _extends3.default)({ key: index, label: null, name: (0, _joinName2.default)(name, index) }, itemProps));
-        }),
-        _react2.default.createElement(
-            _ListItem2.default,
-            null,
-            _react2.default.createElement(
-                _CardActions2.default,
-                null,
-                _react2.default.createElement(_ListAddField2.default, { name: name + '.$', initialCount: initialCount })
-            )
-        )
-    );
+  var children = _ref.children,
+      initialCount = _ref.initialCount,
+      itemProps = _ref.itemProps,
+      label = _ref.label,
+      name = _ref.name,
+      value = _ref.value,
+      props = (0, _objectWithoutProperties3.default)(_ref, ['children', 'initialCount', 'itemProps', 'label', 'name', 'value']);
+  return _react2.default.createElement(
+    _List2.default,
+    {
+      subheader: label ? _react2.default.createElement(
+        _ListSubheader2.default,
+        { disableSticky: true },
+        label
+      ) : undefined
+    },
+    children ? value.map(function (item, index) {
+      return _react.Children.map(children, function (child) {
+        return _react2.default.cloneElement(child, {
+          key: index,
+          label: null,
+          name: (0, _joinName2.default)(name, child.props.name && child.props.name.replace('$', index))
+        });
+      });
+    }) : value.map(function (item, index) {
+      return _react2.default.createElement(_ListItemField2.default, (0, _extends3.default)({
+        key: index,
+        label: null,
+        name: (0, _joinName2.default)(name, index)
+      }, itemProps));
+    }),
+    _react2.default.createElement(
+      _ListItem2.default,
+      null,
+      _react2.default.createElement(
+        _CardActions2.default,
+        null,
+        _react2.default.createElement(_ListAddField2.default, { name: name + '.$', initialCount: initialCount })
+      )
+    )
+  );
 };
 
 exports.default = (0, _connectField2.default)(List_, { includeInChain: false });

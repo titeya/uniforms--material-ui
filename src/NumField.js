@@ -47,7 +47,7 @@ class Num extends Component {
         }
     }
 
-    onChange ({target: {value}}) {
+    onChange (value) {
         const change = value.replace(/[^\d.,-]/g, '');
 
         this.setState({value: change});

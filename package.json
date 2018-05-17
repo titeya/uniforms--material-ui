@@ -1,6 +1,6 @@
 {
   "_from": "uniforms--material-ui",
-  "_id": "uniforms--material-ui@1.22.6",
+  "_id": "uniforms--material-ui@1.22.8",
   "_inBundle": false,
   "_location": "/uniforms--material-ui",
   "_phantomChildren": {},
@@ -49,5 +49,5 @@
     "type": "git",
     "url": "https://github.com/titeya/uniforms--material-ui"
   },
-  "version": "1.22.6"
+  "version": "1.22.8"
 }

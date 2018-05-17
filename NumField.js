@@ -102,9 +102,7 @@ var Num = function (_Component) {
         }
     }, {
         key: 'onChange',
-        value: function onChange(_ref2) {
-            var value = _ref2.target.value;
-
+        value: function onChange(value) {
             var change = value.replace(/[^\d.,-]/g, '');
 
             this.setState({ value: change });
