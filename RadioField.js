@@ -82,7 +82,7 @@ var Radio_ = function Radio_(props) {
       }, (0, _filterDOMProps2.default)(props)),
       (props.hideFiltered && props.filter ? props.allowedValues.filter(props.filter) : props.allowedValues).map(function (item) {
         return _react2.default.createElement(_FormControlLabel2.default, {
-          control: _react2.default.createElement(_Radio2.default, null),
+          control: _react2.default.createElement(_Radio2.default, { color: props.radioColor ? props.radioColor : "secondary" }),
           disabled: props.disabled || props.filter && !props.filter(item),
           key: item,
           label: props.transform ? props.transform(item) : item,

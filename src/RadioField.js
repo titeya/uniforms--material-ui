@@ -35,7 +35,7 @@ const Radio_ = props =>
           : props.allowedValues
         ).map(item => (
           <FormControlLabel
-            control={<Radio />}
+            control={<Radio color={props.radioColor? props.radioColor : "secondary"} />}
             disabled={props.disabled || (props.filter && !props.filter(item))}
             key={item}
             label={props.transform ? props.transform(item) : item}
